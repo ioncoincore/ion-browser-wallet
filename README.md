@@ -3,7 +3,7 @@
 
 A Open Source Browser Based Ionomy Wallet. 
 
-based on: Version 1.2 beta by OutCast3k, live version available at http://coinb.in/ or http://4zpinp6gdkjfplhk.onion
+based on: Version 1.4 beta by OutCast3k, live version available at http://coinb.in/ or http://4zpinp6gdkjfplhk.onion
 
 Github URL: https://github.com/cevap/ion-browser-wallet/
 
