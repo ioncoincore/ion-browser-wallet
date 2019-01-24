@@ -28,10 +28,13 @@ Ion-browser-wallet supports a number of key features such as:
 - HD (bip32) support
 - Supports altcoins such as ionomy, litecoin, dodgecoin and all other
 - Replace by fee (RBF) Support
+- Segwit Support
+- Bech32 address support
+- Fee calculator - https://coinb.in/#fees
 
 Donate to cevap ION: iiT87sp5zT4TiudtDnYwSGQLwfeWC3bnmm
                 ION: 3DHhT6c2BN86Tx6D2w615UUSFvUwT41jY7
-Donate to OutCast3k ION: 1CWHWkTWaq1K5hevimJia3cyinQsrgXUvg to see more development!
+Donate to OutCast3k ION: 3K1oFZMks41C7qDYBsr72SYjapLqDuSYuN to see more development!
 
 Demo: http://ionb.freeiz.com/ (no API for ionomy is setup currently)
 
