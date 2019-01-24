@@ -1,0 +1,9 @@
+*.patch
+hosts.txt
+robots.txt
+*.tar.xz
+*.tar.gz
+*.zip
+*.7z
+
+downloads/
