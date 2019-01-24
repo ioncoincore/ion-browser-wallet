@@ -1,4 +1,4 @@
-c8fd2539eaf163bf6d05bf8efe138002  ./index.html
+005af9424632af7b326a57fb78df036a  ./index.html
 d6e331a3d0c4d31051e028aff605a64b  ./favicon.png
 47b9b3a1ad22ed6274369c9f62e11d19  ./LICENSE
 2a6692973429d7a74513bfa8bcb5be20  ./images/loader.gif
@@ -9,7 +9,7 @@ fb42704975495ac05ce4c995ea4fb0c8  ./images/ionomy-logo-210x52.gif
 48523231ea9954cac7975a2d951cadeb  ./images/donation-scdev-btc-address.png
 39ff23a38d79835c2290b0d15ca59b8d  ./images/donation-cevap-btc-address.png
 a402bf521cc0daee7fbdbddd73fe070b  ./favicon.ico
-8dfe65964a7e1083e8b47fb755ddf69e  ./README.md
+266e5313d11c85663457d09524c5fcfc  ./README.md
 0518c42f10c96cdea38cf6b205e8683a  ./CNAME
 9fdcc2dd33eb0e984d3397258f785bc1  ./js/sha512.js
 6055168fe22e81ddadadb4c2d4fb4260  ./js/bootstrap-datetimepicker.min.js
@@ -40,4 +40,3 @@ fa2772327f55d8198301fdb8bcfc8158  ./fonts/glyphicons-halflings-regular.woff
 e18bbf611f2a2e43afc071aa2f4e1512  ./fonts/glyphicons-halflings-regular.ttf
 f4769f9bdb7466be65088239c12046d1  ./fonts/glyphicons-halflings-regular.eot
 7051c5e17bb2e23754d009ff4d9b4ff9  ./.gitignore
-56acedc48d0363f4657774d5a1bd3853  ./sha512sum
