@@ -80,6 +80,7 @@
 							</li>
 							<li><a href="#verify" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Verify</a></li>
 							<li><a href="#sign" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Sign</a></li>
+							<li><a href="#hash" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> Hash</a></li>
 							<li><a href="#broadcast" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> Broadcast</a></li>
 							<li><a href="#wallet" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> Wallet</a></li>
 							<li><a href="#about" data-toggle="tab"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
@@ -1294,6 +1295,17 @@
 						</div>
 
 						<input type="button" value="Submit" class="btn btn-primary" id="signBtn">
+						<br>
+					</div>
+
+					<div class="tab-pane tab-content" id="hash">
+						<h2>Create hash <small>using the Double-SHA256 hashing algorithm</small></h2>
+						<p>Enter your text to be hashed</p>
+						<textarea class="form-control" style="height:125px" id="textToHash"></textarea>
+						<br>
+						<div id="textToHashStatus" class="alert">Status
+						</div>
+						<input type="button" value="Submit" id="doublehashSubmitBtn" class="btn btn-primary">
 						<br>
 					</div>
 

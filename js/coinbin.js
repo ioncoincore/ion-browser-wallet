@@ -1344,6 +1344,42 @@ $(document).ready(function() {
 
 
 
+	/* hash script code */
+
+	function bytesToString(a){
+		for (var d=[],b=0;b<a.length;b++)
+			d.push(String.fromCharCode(a[b]));
+		return d.join("")
+	};
+	function msg_numToVarInt(a){
+		if (253 > a) return [a];
+		if (65535 >= a) return [253, a&255, a>>>8];
+		throw"message too large";
+	}
+	function msg_bytes(a){
+		a = Crypto.charenc.UTF8.stringToBytes(a);
+		return msg_numToVarInt(a.length).concat(a);
+	}
+	function msg_digest(a){
+		a = msg_bytes("ION Signed Message:\n").concat(msg_bytes(a));
+		a = bytesToString(msg_bytes(a));
+		return Crypto.SHA256(Crypto.SHA256(a,{asBytes:true}),{asBytes:false});
+	}
+	function reverseByteArray(arrayIn) {
+		var result = [];
+		for (var i = arrayIn.length-1; i >= 0; i--) {
+		  result.push(arrayIn[i]);
+		}
+		return result;
+	}
+	function doubleHash(a) {
+		return Crypto.SHA256(Crypto.SHA256(a,{asBytes:true}),{asBytes:true});
+	}
+	$("#doublehashSubmitBtn").click(function(){
+		$("#textToHashStatus").addClass('alert-success').removeClass('alert-danger');
+		var hash = doubleHash(Crypto.charenc.UTF8.stringToBytes($("#textToHash").val()));
+		$("#textToHashStatus").html('Hash: '+Crypto.util.bytesToHex(reverseByteArray(hash)));
+	});
 
 	/* verify script code */
 
@@ -1671,6 +1707,13 @@ $(document).ready(function() {
 			}
 		}
 		return r;
+	}
+
+	var _getDoublehash = _get("hash");
+	if(_getDoublehash[0]){
+		$("#textToHash").val(_getDoublehash[0]);
+		$("#doublehashSubmitBtn").click();
+		window.location.hash = "#hash";
 	}
 
 	var _getBroadcast = _get("broadcast");
